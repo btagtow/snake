@@ -1,24 +1,13 @@
 import React from 'react';
 import './App.css';
+import Board from './components/Board'
 
-class App extends React.Component {
-  state = {
-    rows: 10,
-    columns: 10,
-    grid: [],
-  };
-  
-
-  render (){
-    return (
-    <div className="App">
-      <h1 className="head">Snake</h1>
-      <div className="snake-container">
-        <div className="grid-box" > </div>
-      </div>
+export default function App() {
+  return (
+    <div>
+      <h1>Snake</h1>
+      <Board />
     </div>
-    );
-  }
+  )
 }
 
-export default App;
