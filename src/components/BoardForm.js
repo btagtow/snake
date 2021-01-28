@@ -20,7 +20,7 @@ export default class BoardForm extends Component {
     
     createsBoard = () => {
         for (let i=0;i<this.state.size;i++){
-            return <Board />
+            return <div className="board-tile"></div>
         }
     }
     render() {
@@ -32,7 +32,9 @@ export default class BoardForm extends Component {
                     <input type="submit" value="submit"></input>
                 </form>
                 {this.createsBoard}
+                <Board />
             </div>
+            
         )
     }
 }
