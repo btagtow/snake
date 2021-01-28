@@ -31,7 +31,7 @@ export default class BoardForm extends Component {
                     <input type="number" id="rows" name="rows" min="8" max="24" value={this.state.value} onChange={this.handleChange}></input>
                     <input type="submit" value="submit"></input>
                 </form>
-                {this.createsBoard()}
+                {this.createsBoard}
             </div>
         )
     }
